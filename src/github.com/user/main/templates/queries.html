@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <Title>The Sphere Aadhaar API Queries</Title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+  </head>
+<body class="container">
+    <br />
+    <br />
+    <div class="jumbotron">
+    <h2>API Query Information</h2>
+    </div>
+    <table class="table table-bordered">
+      <thead class="thead-inverse">
+        <th>ID</th>
+        <th>Query</th>
+      </thead>  
+      {{ range . }}
+      <tr scope="row">
+        <td>{{ .Id }}</td>
+        <td>{{ .Query_name }}</td>
+      </tr>
+      {{ end }}
+    </table>
+    <br />
+    <br />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
